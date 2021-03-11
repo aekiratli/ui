@@ -1990,11 +1990,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pastafinance.com",
+                href: "https://exchange.wineyield.finance",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pastafinance.com/#/pool",
+                href: "https://exchange.wineyield.finance/#/pool",
             },
         ],
     },
@@ -2031,7 +2031,7 @@ var links = [
         items: [
             {
                 label: "Github",
-                href: "https://github.com/pastafinance/",
+                href: "https://github.com/WineFinance/",
             },
         ],
     },
@@ -2043,14 +2043,14 @@ var socials = [
         items: [
             {
                 label: "Announcements",
-                href: "https://t.me/PastaFinanceAnnouncements",
+                href: "https://t.me/WineFinance",
             }
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/pastafinance",
+        href: "https://twitter.com/FinanceWine",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2644,7 +2644,7 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: '#880808', textDisabled: '#998c83', textSubtle: '#880808', borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#be7434", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", 
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#91110c", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", 
     // primaryDark: "#0098A1",
     tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
