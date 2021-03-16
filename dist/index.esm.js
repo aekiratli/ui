@@ -2106,11 +2106,11 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/garlicfinance/",
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://garlicfinance.gitbook.io/garlic-finance/",
             },
         ],
     },
@@ -2122,14 +2122,14 @@ var socials = [
         items: [
             {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
+                href: "https://t.me/GarlicFinance",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/FinanceGoose",
+        href: "https://twitter.com/GarlicFinance",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2710,9 +2710,9 @@ var templateObject_1;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#aa8929",
-    primaryBright: "#aa8929",
-    primaryDark: "#aa8929",
+    primary: "#5124ae",
+    primaryBright: "#5124ae",
+    primaryDark: "#5124ae",
     secondary: "#7645D9",
     success: "#31D0AA",
     warning: "#FFB237",
