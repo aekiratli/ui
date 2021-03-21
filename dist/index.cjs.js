@@ -353,7 +353,7 @@ var Icon$K = function (props) {
 
 var Icon$J = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/garlic/logo.png" })));
+        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/mooncake/logo.png" })));
 };
 
 var Icon$I = function (props) {
@@ -410,7 +410,7 @@ var Icon$F = function (props) {
 
 var Icon$E = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/garlic/9.png" })));
+        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/mooncake/9.png" })));
 };
 
 var Icon$D = function (props) {
@@ -1140,7 +1140,7 @@ var Progress = function (_a) {
 var rotate = styled.keyframes(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/garlic/9.png" })));
+        React__default['default'].createElement("image", { width: "96", height: "96", href: "/images/mooncake/9.png" })));
 };
 var Container$3 = styled__default['default'].div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled__default['default'](SpinnerIcon)(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
@@ -1875,7 +1875,7 @@ var Icon$k = function (props) {
 var Logo$1 = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/garlic/LogoTextNewDark.png' : '/images/garlic/LogoTextNewWhite.png' })));
+        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/mooncake/LogoTextNewDark.png' : '/images/mooncake/LogoTextNewWhite.png' })));
 };
 
 var Icon$j = function (props) {
@@ -2119,11 +2119,11 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/garlicfinance/",
+                href: "https://github.com/mooncakefinance/",
             },
             {
                 label: "Docs",
-                href: "https://garlicfinance.gitbook.io/garlic-finance/",
+                href: "https://mooncakefinance.gitbook.io/mooncake-finance/",
             },
         ],
     },
@@ -2135,14 +2135,14 @@ var socials = [
         items: [
             {
                 label: "Announcements",
-                href: "https://t.me/GarlicFinance",
+                href: "https://t.me/mooncakeFinance",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/GarlicFinance",
+        href: "https://twitter.com/mooncakeFinance",
     },
 ];
 var MENU_HEIGHT = 64;
