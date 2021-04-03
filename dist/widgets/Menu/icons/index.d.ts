@@ -21,3 +21,4 @@ export { default as GooseIcon } from "./Goose";
 export { default as LayerIcon } from "./Layer";
 export { default as RoadmapIcon } from "./Roadmap";
 export { default as GithubIcon } from "./Github";
+export { default as YoutubeIcon } from "./Youtube";
