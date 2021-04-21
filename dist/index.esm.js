@@ -1,4 +1,4 @@
-import React, { Children, isValidElement, cloneElement, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
+import React, { isValidElement, cloneElement, Children, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
 import styled, { keyframes, css, useTheme, createGlobalStyle } from 'styled-components';
 import { space, flexbox, layout } from 'styled-system';
 import get from 'lodash/get';
@@ -124,9 +124,10 @@ var getExternalLinkProps = function () { return ({
     rel: "noreferrer noopener",
 }); };
 
-var sizes$1 = {
-    SM: "sm",
+var scales$3 = {
     MD: "md",
+    SM: "sm",
+    XS: "xs",
 };
 var variants$1 = {
     PRIMARY: "primary",
@@ -178,26 +179,34 @@ StyledButton.defaultProps = {
 };
 var templateObject_1$J;
 
-var Button = function (_a) {
-    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, external = _a.external, isLoading = _a.isLoading, disabled = _a.disabled, props = __rest(_a, ["startIcon", "endIcon", "children", "external", "isLoading", "disabled"]);
+var Button = function (props) {
+    var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
     var internalProps = external ? getExternalLinkProps() : {};
     var isDisabled = isLoading || disabled;
-    return (React.createElement(StyledButton, __assign({}, internalProps, props, { isLoading: isLoading, disabled: isDisabled }),
-        React.isValidElement(startIcon) &&
-            React.cloneElement(startIcon, {
-                mr: "0.5rem",
-            }),
-        children,
-        React.isValidElement(endIcon) &&
-            React.cloneElement(endIcon, {
-                ml: "0.5rem",
-            })));
+    var classNames = className ? [className] : [];
+    if (isLoading) {
+        classNames.push("pancake-button--loading");
+    }
+    if (isDisabled && !isLoading) {
+        classNames.push("pancake-button--disabled");
+    }
+    return (React.createElement(StyledButton, __assign({ "$isLoading": isLoading, className: classNames.join(" "), disabled: isDisabled }, internalProps, rest),
+        React.createElement(React.Fragment, null,
+            isValidElement(startIcon) &&
+                cloneElement(startIcon, {
+                    mr: "0.5rem",
+                }),
+            children,
+            isValidElement(endIcon) &&
+                cloneElement(endIcon, {
+                    ml: "0.5rem",
+                }))));
 };
 Button.defaultProps = {
-    variant: variants$1.PRIMARY,
-    size: sizes$1.MD,
-    external: false,
     isLoading: false,
+    external: false,
+    variant: variants$1.PRIMARY,
+    scale: scales$3.MD,
     disabled: false,
 };
 
@@ -621,11 +630,11 @@ var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return theme.colors[variant === variants$1.SUBTLE ? "input" : "tertiary"];
 };
-var StyledButtonMenu = styled.div(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
+var StyledButtonMenu = styled.div(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
 var templateObject_1$E;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes$1.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, onClick = _a.onClick, children = _a.children;
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? scales$3.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, onClick = _a.onClick, children = _a.children;
     return (React.createElement(StyledButtonMenu, { variant: variant }, Children.map(children, function (child, index) {
         return cloneElement(child, {
             isActive: activeIndex === index,
@@ -641,7 +650,7 @@ var InactiveButton = styled(Button)(templateObject_1$D || (templateObject_1$D = 
     return theme.colors[colorKey];
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes$1.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, as = _a.as, props = __rest(_a, ["isActive", "size", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? scales$3.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, as = _a.as, props = __rest(_a, ["isActive", "size", "variant", "as"]);
     if (!isActive) {
         return (React.createElement(InactiveButton, __assign({ forwardedAs: as, size: size, variant: "tertiary", colorKey: variant === variants$1.PRIMARY ? "primary" : "textSubtle" }, props)));
     }
