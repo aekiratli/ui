@@ -1,13 +1,12 @@
 import React, { ReactNode } from "react";
-import { LinkStatus, PushedProps } from "../types";
+import { PushedProps } from "../types";
 interface Props extends PushedProps {
     label: string;
-    status?: LinkStatus;
     icon: React.ReactElement;
     initialOpenState?: boolean;
     className?: string;
     children: ReactNode;
     isActive?: boolean;
 }
-declare const Accordion: React.FC<Props>;
-export default Accordion;
+declare const _default: React.NamedExoticComponent<Props>;
+export default _default;

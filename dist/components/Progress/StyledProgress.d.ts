@@ -5,7 +5,6 @@ interface BarProps {
 export declare const Bar: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, BarProps, never>;
 interface StyledProgressProps {
     variant: ProgressProps["variant"];
-    scale: ProgressProps["scale"];
 }
 declare const StyledProgress: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, StyledProgressProps, never>;
 export default StyledProgress;

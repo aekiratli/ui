@@ -1,16 +1,8 @@
-import { LinkStatus } from "./types";
-export declare const status: {
-    LIVE: LinkStatus;
-    SOON: LinkStatus;
-    NEW: LinkStatus;
-};
 export declare const links: ({
     label: string;
     icon: string;
     href: string;
     items?: undefined;
-    status?: undefined;
-    calloutClass?: undefined;
 } | {
     label: string;
     icon: string;
@@ -18,30 +10,6 @@ export declare const links: ({
         label: string;
         href: string;
     }[];
-    href?: undefined;
-    status?: undefined;
-    calloutClass?: undefined;
-} | {
-    label: string;
-    icon: string;
-    href: string;
-    status: LinkStatus;
-    items?: undefined;
-    calloutClass?: undefined;
-} | {
-    label: string;
-    icon: string;
-    status: LinkStatus;
-    items: ({
-        label: string;
-        href: string;
-        status: LinkStatus;
-    } | {
-        label: string;
-        href: string;
-        status?: undefined;
-    })[];
-    calloutClass: string;
     href?: undefined;
 })[];
 export declare const socials: ({

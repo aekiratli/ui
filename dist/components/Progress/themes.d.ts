@@ -6,12 +6,4 @@ export declare const styleVariants: {
         borderRadius: number;
     };
 };
-export declare const styleScales: {
-    md: {
-        height: string;
-    };
-    sm: {
-        height: string;
-    };
-};
 export default styleVariants;
