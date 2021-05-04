@@ -2411,7 +2411,7 @@ var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush; _a.isDark; var href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
-        React.createElement(StyledImage$1, { className: "desktop-icon", src: "/images/banner.gif", width: 156 }),
+        React.createElement(StyledImage$1, { className: "desktop-icon", src: "/images/banner.png", width: 156 }),
         React.createElement(StyledImage2, { className: "mobile-icon", src: "/images/tokens/lime.png" })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$k, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$l, { width: "24px", color: "textSubtle" }))),
