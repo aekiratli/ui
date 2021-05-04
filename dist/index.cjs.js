@@ -3168,7 +3168,7 @@ var dark$3 = {
 };
 
 var light$2 = {
-    background: '#ffe5fa',
+    background: '#ffeffc',
     hover: "#EEEAF4",
 };
 var dark$2 = {
