@@ -2412,7 +2412,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(StyledImage$1, { className: "desktop-icon", src: "/images/banner.png", width: 156 }),
-        React.createElement(StyledImage2, { className: "mobile-icon", src: "/images/tokens/lime.png" })));
+        React.createElement(StyledImage2, { className: "mobile-icon", src: "/images/tokens/vcake.png" })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$k, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$l, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
@@ -2481,18 +2481,18 @@ var socials = [
         items: [
             {
                 label: "Annoucements",
-                href: "https://t.me/lime_swap",
+                href: "https://t.me/vanillacakefarm",
             },
             {
                 label: "English",
-                href: "https://t.me/limeswapchat",
+                href: "https://t.me/vanillacakechat",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/limeswapio",
+        href: "https://twitter.com/vanillacakeswap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2608,7 +2608,7 @@ var StyledImage = styled.img(templateObject_2$4 || (templateObject_2$4 = __makeT
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
     return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://bscscan.com/token/0xd46936677b2c1bb696f2b67c55239331e2b7cd42", target: "_blank" },
-        React.createElement(StyledImage, { src: "/images/tokens/lime.png" }),
+        React.createElement(StyledImage, { src: "/images/tokens/vcake.png" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React.memo(CakePrice);
@@ -3156,7 +3156,7 @@ var dark$3 = {
 
 var light$2 = {
     background: lightColors.card,
-    hover: "#EEEAF4",
+    hover: "#ffe5fa",
 };
 var dark$2 = {
     background: darkColors.card,

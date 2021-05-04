@@ -2494,18 +2494,18 @@ var socials = [
         items: [
             {
                 label: "Annoucements",
-                href: "https://t.me/lime_swap",
+                href: "https://t.me/vanillacakefarm",
             },
             {
                 label: "English",
-                href: "https://t.me/limeswapchat",
+                href: "https://t.me/vanillacakechat",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/limeswapio",
+        href: "https://twitter.com/vanillacakeswap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -3169,7 +3169,7 @@ var dark$3 = {
 
 var light$2 = {
     background: lightColors.card,
-    hover: "#EEEAF4",
+    hover: "#ffe5fa",
 };
 var dark$2 = {
     background: darkColors.card,
