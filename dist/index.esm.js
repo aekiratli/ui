@@ -3155,8 +3155,8 @@ var dark$3 = {
 };
 
 var light$2 = {
-    background: lightColors.card,
-    hover: "#ffe5fa",
+    background: "#ffe5fa",
+    hover: "#EEEAF4",
 };
 var dark$2 = {
     background: darkColors.card,
