@@ -1907,7 +1907,7 @@ var shadows = {
     active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
     success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
-    focus: "0px 0px 0px 1px #e75480, 0px 0px 0px 4px #e75480",
+    focus: "0px 0px 0px 1px #57116a, 0px 0px 0px 4px #57116a",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
@@ -2412,7 +2412,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(StyledImage$1, { className: "desktop-icon", src: "/images/banner.png", width: 156 }),
-        React.createElement(StyledImage2, { className: "mobile-icon", src: "/images/tokens/vcake.png" })));
+        React.createElement(StyledImage2, { className: "mobile-icon", src: "/images/tokens/selenium.png" })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$k, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$l, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
@@ -2481,18 +2481,22 @@ var socials = [
         items: [
             {
                 label: "Annoucements",
-                href: "https://t.me/vanillacakefarm",
+                href: "https://t.me/voidfarm_announcements",
             },
             {
                 label: "English",
-                href: "https://t.me/vanillacakechat",
+                href: "https://t.me/voidfarm_en",
+            },
+            {
+                label: "Espanol",
+                href: "https://t.me/voidfarm_es",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/vanillacakeswap",
+        href: "https://twitter.com/VoidFarm",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2608,7 +2612,7 @@ var StyledImage = styled.img(templateObject_2$4 || (templateObject_2$4 = __makeT
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
     return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://bscscan.com/token/0xd46936677b2c1bb696f2b67c55239331e2b7cd42", target: "_blank" },
-        React.createElement(StyledImage, { src: "/images/tokens/vcake.png" }),
+        React.createElement(StyledImage, { src: "/images/tokens/selenium.png" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React.memo(CakePrice);
@@ -3097,17 +3101,17 @@ var templateObject_1;
 
 var baseColors = {
     failure: "#db6265",
-    primary: "#e75480",
+    primary: "#57116a",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
-    secondary: "#e75480",
-    success: "#e75480",
+    secondary: "#57116a",
+    success: "#57116a",
     warning: "#FFB237",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#000000", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#e75480", textDisabled: "#BDC2C4", textSubtle: "#e75480", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#000000", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#57116a", textDisabled: "#BDC2C4", textSubtle: "#57116a", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { failure: "#771014", primary: "#E0AAFF", primaryBright: "#ffefdf", primaryDark: "#0098A1", secondary: "#E0AAFF", success: "#1e6f5c", warning: "#FFB237", background: "#100C18", backgroundDisabled: "#1f1f1f", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#333333", inputSecondary: "#E0AAFF", tertiary: "#353547", text: "#e7e8ea", textDisabled: "#666171", textSubtle: "#8D7D95", borderColor: "#524B63", card: "#27262c", gradients: {
@@ -3155,7 +3159,7 @@ var dark$3 = {
 };
 
 var light$2 = {
-    background: "#ffeffc",
+    background: lightColors.card,
     hover: "#EEEAF4",
 };
 var dark$2 = {

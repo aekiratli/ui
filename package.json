@@ -1,38 +1,35 @@
 {
   "_args": [
     [
-      "voidfarm/uikit@0.2.3",
-      "C:\\Users\\Gamer\\Desktop\\Nacho\\Projects\\VoidFarm\\frontend\\mozartfinance-frontend"
+      "voidfarm-toolkit@0.2.3",
+      "C:\\Users\\aek\\Desktop\\Projects\\frontend-farms"
     ]
   ],
-  "_from": "voidfarm-toolkit@^0.2.3",
+  "_from": "voidfarm-toolkit@0.2.3",
   "_id": "voidfarm-toolkit@0.2.3",
   "_inBundle": false,
   "_integrity": "sha512-RyV6AwsmXgLKQiSmeimCPTIWzBoGRfFu3v87WtR/2PsXNjkMMLZp3Dy7hnlMP08iWfFVdFYzHq+FOh9GNNV6tw==",
   "_location": "/voidfarm-toolkit",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "voidfarm-toolkit@^0.2.3",
+    "raw": "voidfarm-toolkit@0.2.3",
     "name": "voidfarm-toolkit",
     "escapedName": "voidfarm-toolkit",
-    "rawSpec": "^0.2.3",
+    "rawSpec": "0.2.3",
     "saveSpec": null,
-    "fetchSpec": "^0.2.3"
+    "fetchSpec": "0.2.3"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/voidfarm-toolkit/-/voidfarm-toolkit-0.2.3.tgz",
-  "_shasum": "f3d3b80da56fc7ce179e6f66f048157b8b66bb2c",
-  "_spec": "voidfarm-toolkit@^0.2.3",
-  "_where": "C:\\Users\\aek\\Desktop\\Projects\\void\\frontend-farms",
+  "_spec": "0.2.3",
+  "_where": "C:\\Users\\aek\\Desktop\\Projects\\frontend-farms",
   "bugs": {
     "url": "https://github.com/voidfarm/voidfarm-toolkit/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "@types/lodash": "^4.14.162",
     "@types/styled-system": "^5.1.10",
@@ -40,7 +37,6 @@
     "react-transition-group": "^4.4.1",
     "styled-system": "^5.1.5"
   },
-  "deprecated": false,
   "description": "Set of UI components for pancake projects",
   "devDependencies": {
     "@babel/core": "^7.12.16",
