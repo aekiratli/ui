@@ -1,35 +1,32 @@
 {
-  "_args": [
-    [
-      "voidfarm-toolkit@0.2.3",
-      "C:\\Users\\aek\\Desktop\\Projects\\frontend-farms"
-    ]
-  ],
-  "_from": "voidfarm-toolkit@0.2.3",
-  "_id": "voidfarm-toolkit@0.2.3",
+  "_from": "selenium-toolkit@^0.2.3",
+  "_id": "selenium-toolkit@0.2.3",
   "_inBundle": false,
   "_integrity": "sha512-RyV6AwsmXgLKQiSmeimCPTIWzBoGRfFu3v87WtR/2PsXNjkMMLZp3Dy7hnlMP08iWfFVdFYzHq+FOh9GNNV6tw==",
-  "_location": "/voidfarm-toolkit",
+  "_location": "/selenium-toolkit",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "voidfarm-toolkit@0.2.3",
-    "name": "voidfarm-toolkit",
-    "escapedName": "voidfarm-toolkit",
-    "rawSpec": "0.2.3",
+    "raw": "selenium-toolkit@^0.2.3",
+    "name": "selenium-toolkit",
+    "escapedName": "selenium-toolkit",
+    "rawSpec": "^0.2.3",
     "saveSpec": null,
-    "fetchSpec": "0.2.3"
+    "fetchSpec": "^0.2.3"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/voidfarm-toolkit/-/voidfarm-toolkit-0.2.3.tgz",
-  "_spec": "0.2.3",
-  "_where": "C:\\Users\\aek\\Desktop\\Projects\\frontend-farms",
+  "_resolved": "https://registry.npmjs.org/selenium-toolkit/-/selenium-toolkit-0.2.3.tgz",
+  "_shasum": "f3d3b80da56fc7ce179e6f66f048157b8b66bb2c",
+  "_spec": "selenium-toolkit@^0.2.3",
+  "_where": "selenium",
   "bugs": {
-    "url": "https://github.com/voidfarm/voidfarm-toolkit/issues"
+    "url": "https://github.com/selenium/selenium-toolkit/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "@types/lodash": "^4.14.162",
     "@types/styled-system": "^5.1.10",
@@ -37,6 +34,7 @@
     "react-transition-group": "^4.4.1",
     "styled-system": "^5.1.5"
   },
+  "deprecated": false,
   "description": "Set of UI components for pancake projects",
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -81,7 +79,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/voidfarm/voidfarm-toolkit#readme",
+  "homepage": "https://github.com/seleniumswap/uikit#readme",
   "husky": {
     "hooks": {
       "pre-commit": "yarn format:write",
@@ -96,7 +94,7 @@
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "name": "voidfarm-toolkit",
+  "name": "selenium-toolkit",
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -105,7 +103,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voidfarm/voidfarm-toolkit.git"
+    "url": "git+https://github.com/seleniumswap/uikit.git"
   },
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",

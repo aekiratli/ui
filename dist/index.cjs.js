@@ -2494,22 +2494,18 @@ var socials = [
         items: [
             {
                 label: "Annoucements",
-                href: "https://t.me/voidfarm_announcements",
+                href: "https://t.me/seleniumswap",
             },
             {
                 label: "English",
-                href: "https://t.me/voidfarm_en",
-            },
-            {
-                label: "Espanol",
-                href: "https://t.me/voidfarm_es",
+                href: "https://t.me/seleniumswapchat",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/VoidFarm",
+        href: "https://twitter.com/seleniumswap",
     },
 ];
 var MENU_HEIGHT = 64;
